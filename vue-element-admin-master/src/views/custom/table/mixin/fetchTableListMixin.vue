@@ -28,8 +28,6 @@ export default {
           width: '120px',
           align: 'center'
         },
-     
-       
         {
           prop: 'tools',
           label: '操作',

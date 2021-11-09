@@ -38,8 +38,8 @@ for (let i = 0; i < count; i++) {
   List.push(Mock.mock({
     id: '@increment',
     name: '@cname',
-    sno: '202160',
-    birthday: '1998-12-05'
+    sno: '21@string(number, 4, 4)',
+    birthday: '@Date("yyyy-MM-dd")'
   }))
 }
 

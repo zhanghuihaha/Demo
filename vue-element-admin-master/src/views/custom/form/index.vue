@@ -14,10 +14,10 @@
               </el-col>
             </s-validate>
           </el-form-item>
-          <el-form-item class="address" label="学号">
-            <s-validate #default="{ validate }" :rules="address" :value="form.address">
+          <el-form-item class="sno" label="学号">
+            <s-validate #default="{ validate }" :rules="sno" :value="form.sno">
               <el-col :span="11">
-                <el-input v-model="form.address" @blur="validate" />
+                <el-input v-model="form.sno" @blur="validate" />
               </el-col>
             </s-validate>
           </el-form-item>
@@ -53,7 +53,7 @@ export default {
       form: {
         date: '',
         name: '',
-        address: ''
+        sno: ''
       },
       date: [
         {
@@ -77,7 +77,7 @@ export default {
           message: '请输入正确的姓名(2~4个汉字)'
         }
       ],
-      address: [
+      sno: [
         {
           test: function(value) {
             return /^\d{6}$/.test(value)
@@ -105,7 +105,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.address .el-select {
+.sno .el-select {
     margin-right: 20px;
 }
 </style>
